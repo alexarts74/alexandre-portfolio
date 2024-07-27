@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-
+console.log("in script.js");
 // document.addEventListener('DOMContentLoaded', function() {
 //     let menuLinks = document.getElementById('transition-link');
 
