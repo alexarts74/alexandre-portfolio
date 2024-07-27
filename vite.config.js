@@ -1,3 +1,5 @@
-export default {
-    base: '/alexandre-portfolio/' // Replace with your GitHub repository name
-  }
+import { defineConfig } from 'vite'
+
+ export default defineConfig({
+    base: '/alexandre-portfolio/',
+  })
