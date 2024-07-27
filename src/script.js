@@ -56,6 +56,17 @@ function switchLanguage(lang) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const langLinks = document.querySelectorAll('.lang-switch a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedLang = this.getAttribute('data-lang');
+            setLanguage(selectedLang);
+        });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".letter-by-letter");
     console.log(items);
@@ -82,16 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const langLinks = document.querySelectorAll('.lang-switch a');
-    langLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const selectedLang = this.getAttribute('data-lang');
-            setLanguage(selectedLang);
-        });
-    });
-});
 
 document.getElementById('burger-menu').addEventListener('click', function() {
     const menu = document.getElementById('burger-menu-content');
