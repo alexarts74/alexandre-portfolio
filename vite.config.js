@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/alexandre-portfolio/' : '/',
+  base: '/alexandre-portfolio/', // Base URL pour GitHub Pages
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        index: 'index.html', // Point d'entrée pour la page principale
+        gradient: 'src/gradient.ts' // Fichier TypeScript
+      }
+    }
   }
 });
