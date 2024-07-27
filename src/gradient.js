@@ -42,15 +42,12 @@ export const config = {
 };
 
 // define an element with id="gradient" in your html
+
 new NeatGradient({
     ref: document.getElementById("gradient"),
     ...config
 });
 
-new NeatGradient({
-    ref: document.getElementById("gradient-english"),
-    ...config
-});
 
 
 
