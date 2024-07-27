@@ -46,10 +46,14 @@ new NeatGradient({
     ref: document.getElementById("gradient"),
     ...config
 });
+
 new NeatGradient({
     ref: document.getElementById("gradient-english"),
     ...config
 });
+
+
+
 
 // you can change the config at any time
 
