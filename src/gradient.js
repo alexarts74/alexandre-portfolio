@@ -1,7 +1,7 @@
-import { NeatConfig, NeatGradient } from "@firecms/neat";
+import { NeatGradient } from "@firecms/neat";
 
 // Configuration du gradient
-export const config: NeatConfig = {
+export const config = {
     "colors": [
         {
             "color": "#FAA0A0",
@@ -43,11 +43,11 @@ export const config: NeatConfig = {
 
 // define an element with id="gradient" in your html
 new NeatGradient({
-    ref: document.getElementById("gradient") as HTMLCanvasElement,
+    ref: document.getElementById("gradient"),
     ...config
 });
 new NeatGradient({
-    ref: document.getElementById("gradient-english") as HTMLCanvasElement,
+    ref: document.getElementById("gradient-english"),
     ...config
 });
 
