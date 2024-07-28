@@ -47,13 +47,3 @@ new NeatGradient({
     ref: document.getElementById("gradient"),
     ...config
 });
-
-
-
-
-
-// you can change the config at any time
-
-
-// you can also destroy the gradient for cleanup
-// e.g. returning from a useEffect hook in React
